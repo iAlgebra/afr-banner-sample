@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="vendor.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+
+    <!--- STANDARD DCM CLICKTAG ---->
+    <script type="text/javascript">
+      var platform = 'DCM';
+      var clickTag = 'http://www.google.com';
+    </script>
+    <!-- END STANDARD DCM CLICKTAG -->
+
+</head>
+<body>
+<div id="container">
+    <!-- Preloader -->
+    <div id="preloader">
+        <img src="loader.svg" alt=""/>
+    </div>
+    <div id="banner">
+        <!-- Background Shapes -->
+        <div id="background-shapes-container">
+            <div class="shape-container">
+                <div class="shape-item clockwise"></div>
+            </div>
+            <div class="shape-container">
+                <div class="shape-item anticlockwise"></div>
+            </div>
+        </div>
+
+        <div class="frame" id="frame-1">
+            <div class="frame-item center-all">
+                <!--Fairfax Logo -->
+                <img class="logo-container" id="logo-container-1" src="logo.svg" alt=""/>
+            </div>
+        </div>
+
+        <div class="frame" id="frame-2">
+            <div class="frame-item center-all frame-2-text">
+                <p class="first">Elevate the way</p>
+                <p class="last">you do business</p>
+            </div>
+            <div class="frame-item center-all frame-2-city">
+                <svg id="city" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.17 85.17">
+                    <style>
+                        .cls-1, .cls-4 {
+                            fill: #296e99;
+                        }
+
+                        .cls-2, .cls-5 {
+                            fill: #a9c5d6;
+                        }
+
+                        .cls-10, .cls-12, .cls-13, .cls-15, .cls-2, .cls-4, .cls-5, .cls-8 {
+                            stroke: #143059;
+                        }
+
+                        .cls-10, .cls-12, .cls-13, .cls-15, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                        }
+
+                        .cls-10, .cls-2, .cls-6 {
+                            stroke-width: 0.75px;
+                        }
+
+                        .cls-10, .cls-13, .cls-15, .cls-3, .cls-6, .cls-7, .cls-8 {
+                            fill: none;
+                        }
+
+                        .cls-3, .cls-6, .cls-7 {
+                            stroke: #205284;
+                        }
+
+                        .cls-3 {
+                            stroke-width: 0.75px;
+                        }
+
+                        .cls-12, .cls-4, .cls-5, .cls-8 {
+                            stroke-width: 0.74px;
+                        }
+
+                        .cls-7 {
+                            stroke-width: 0.74px;
+                        }
+
+                        .cls-9 {
+                            opacity: 0.2;
+                        }
+
+                        .cls-11 {
+                            fill: #29759b;
+                        }
+
+                        .cls-12, .cls-14 {
+                            fill: #e58423;
+                        }
+
+                        .cls-13 {
+                            stroke-width: 0.7px;
+                        }
+
+                        .cls-15 {
+                            stroke-width: 0.68px;
+                        }
+                    </style>
+                    <g id="background">
+                        <line class="cls-1" x1="43.74" y1="81.33" x2="69.38" y2="81.33"/>
+                        <line class="cls-1" x1="67.2" y1="84.68" x2="82.2" y2="84.68"/>
+                        <path class="cls-2"
+                              d="M17.26,18.32H15.44A5.23,5.23,0,0,0,5.12,19.5v.94H4.66A3.53,3.53,0,0,0,1.14,24h0a3.53,3.53,0,0,0,3.52,3.52h12.6a4.59,4.59,0,1,0,0-9.17Z"/>
+                        <path class="cls-3" d="M65.66.37h0a3.07,3.07,0,0,1,3.07,3.08"/>
+                        <path class="cls-3" d="M71.81.37h0a3.08,3.08,0,0,0-3.08,3.08"/>
+                        <path class="cls-3" d="M.37,38.12h0a3.07,3.07,0,0,1,3.08,3.07"/>
+                        <path class="cls-3" d="M6.53,38.12h0a3.07,3.07,0,0,0-3.08,3.07"/>
+                        <path class="cls-3" d="M79.32,43.57h0a3.08,3.08,0,0,1,3.08,3.08"/>
+                        <path class="cls-3" d="M85.48,43.57h0a3.08,3.08,0,0,0-3.08,3.08"/>
+                        <circle class="cls-4" cx="85.48" cy="22.6" r="4.8"/>
+                        <line class="cls-1" x1="94.12" y1="22.6" x2="97.8" y2="22.6"/>
+                        <line class="cls-1" x1="91.59" y1="16.49" x2="94.19" y2="13.89"/>
+                        <line class="cls-1" x1="85.48" y1="13.96" x2="85.48" y2="10.28"/>
+                        <line class="cls-1" x1="79.37" y1="16.49" x2="76.77" y2="13.89"/>
+                        <path class="cls-5"
+                              d="M86.17,24.78H84.34A5.23,5.23,0,0,0,74,26v.95h-.45A3.52,3.52,0,0,0,70,30.42h0A3.53,3.53,0,0,0,73.57,34h12.6a4.59,4.59,0,0,0,0-9.17Z"/>
+                        <line class="cls-6" x1="94.12" y1="22.72" x2="97.8" y2="22.72"/>
+                        <line class="cls-6" x1="91.59" y1="16.61" x2="94.19" y2="14.01"/>
+                        <line class="cls-6" x1="85.48" y1="14.08" x2="85.48" y2="10.4"/>
+                        <line class="cls-6" x1="79.37" y1="16.61" x2="76.77" y2="14.01"/>
+                        <line class="cls-7" x1="43.74" y1="81.44" x2="69.38" y2="81.44"/>
+                        <line class="cls-7" x1="67.2" y1="84.8" x2="82.2" y2="84.8"/>
+                    </g>
+                    <g id="middle">
+                        <line class="cls-3" x1="45.87" y1="9.21" x2="45.87" y2="25.17"/>
+                        <line class="cls-3" x1="56.99" y1="25.17" x2="56.99" y2="9.21"/>
+                        <path class="cls-4" d="M51.45,18.21,42.36,27.3V77.91H60.53V27.3Z"/>
+                        <line class="cls-8" x1="51.45" y1="18.21" x2="51.45" y2="77.91"/>
+                        <polyline class="cls-8" points="42.36 27.3 60.53 45.46 42.38 63.61 51.44 72.67"/>
+                        <polyline class="cls-8" points="60.53 27.3 42.36 45.46 60.51 63.61 51.45 72.67"/>
+                        <line class="cls-3" x1="45.87" y1="14.01" x2="56.99" y2="14.01"/>
+                        <path class="cls-4"
+                              d="M19.72,15.27H34a1.21,1.21,0,0,1,1.21,1.21V77.91a0,0,0,0,1,0,0H18.51a0,0,0,0,1,0,0V16.48A1.21,1.21,0,0,1,19.72,15.27Z"/>
+                        <rect class="cls-4" x="21.39" y="12.46" width="10.96" height="2.81"/>
+                        <rect class="cls-5" x="22.78" y="22.88" width="2.34" height="5.15"/>
+                        <rect class="cls-5" x="28.63" y="22.88" width="2.34" height="5.15"/>
+                        <rect class="cls-5" x="22.78" y="33.42" width="2.34" height="5.15"/>
+                        <rect class="cls-5" x="28.63" y="33.42" width="2.34" height="5.15"/>
+                        <rect class="cls-5" x="22.78" y="43.96" width="2.34" height="5.15"/>
+                        <rect class="cls-5" x="28.63" y="43.96" width="2.34" height="5.15"/>
+                        <rect class="cls-5" x="22.78" y="54.49" width="2.34" height="5.15"/>
+                        <rect class="cls-5" x="28.63" y="54.49" width="2.34" height="5.15"/>
+                        <rect class="cls-5" x="22.78" y="65.03" width="2.34" height="5.15"/>
+                        <rect class="cls-5" x="28.63" y="65.03" width="2.34" height="5.15"/>
+                    </g>
+                    <g id="foreground">
+                        <polygon class="cls-9" points="53.81 77.75 57.08 77.75 57 42.78 57 42.78 53.81 77.75"/>
+                        <path class="cls-4"
+                              d="M58.68,41.31H68a1.57,1.57,0,0,1,1.57,1.57v35a0,0,0,0,1,0,0H57.11a0,0,0,0,1,0,0v-35A1.57,1.57,0,0,1,58.68,41.31Z"/>
+                        <line class="cls-1" x1="65.23" y1="46.61" x2="65.23" y2="48.81"/>
+                        <line class="cls-1" x1="65.23" y1="52.46" x2="65.23" y2="54.66"/>
+                        <line class="cls-1" x1="65.23" y1="58.39" x2="65.23" y2="60.59"/>
+                        <line class="cls-1" x1="65.23" y1="64.31" x2="65.23" y2="66.52"/>
+                        <line class="cls-1" x1="65.23" y1="70.24" x2="65.23" y2="72.44"/>
+                        <line class="cls-10" x1="65.23" y1="46.73" x2="65.23" y2="48.93"/>
+                        <line class="cls-10" x1="61.41" y1="46.73" x2="61.41" y2="48.93"/>
+                        <line class="cls-10" x1="65.23" y1="52.58" x2="65.23" y2="54.78"/>
+                        <line class="cls-10" x1="61.41" y1="52.58" x2="61.41" y2="54.78"/>
+                        <line class="cls-10" x1="65.23" y1="58.51" x2="65.23" y2="60.71"/>
+                        <line class="cls-10" x1="61.41" y1="58.51" x2="61.41" y2="60.71"/>
+                        <line class="cls-10" x1="65.23" y1="64.43" x2="65.23" y2="66.64"/>
+                        <line class="cls-10" x1="61.41" y1="64.43" x2="61.41" y2="66.64"/>
+                        <line class="cls-10" x1="65.23" y1="70.36" x2="65.23" y2="72.56"/>
+                        <line class="cls-10" x1="61.41" y1="70.36" x2="61.41" y2="72.56"/>
+                        <path class="cls-11" d="M81.94,62.81a6,6,0,0,0-2.39-.5,6,6,0,1,0,4.37,10.22"/>
+                        <path class="cls-11"
+                              d="M87.12,55.15h0c3.08,0,5.57,8.17,5.57,11.18V68a5.51,5.51,0,0,1-5.57,5.46h0A5.51,5.51,0,0,1,81.55,68V66.33C81.55,63.32,84,55.15,87.12,55.15Z"/>
+                        <circle class="cls-12" cx="79.55" cy="68.25" r="6.04"/>
+                        <path class="cls-12"
+                              d="M87.12,55.39h0c3.08,0,5.57,8.17,5.57,11.18V68.2a5.51,5.51,0,0,1-5.57,5.45h0a5.51,5.51,0,0,1-5.57-5.45V66.57C81.55,63.56,84,55.39,87.12,55.39Z"/>
+                        <polygon class="cls-9"
+                                 points="78.81 74.25 82.31 73.78 83.92 72.53 81.76 69.68 81.94 62.8 79.89 62.32 78.81 74.25"/>
+                        <line class="cls-13" x1="81.01" y1="69.8" x2="79" y2="71.81"/>
+                        <line class="cls-13" x1="86.65" y1="68.36" x2="86.65" y2="78.35"/>
+                        <line class="cls-13" x1="86.65" y1="72.76" x2="88.66" y2="70.75"/>
+                        <line class="cls-13" x1="86.64" y1="71.5" x2="84.98" y2="69.85"/>
+                        <line class="cls-13" x1="79" y1="65.6" x2="79" y2="78.29"/>
+                        <line class="cls-13" x1="79" y1="68.32" x2="80.5" y2="66.81"/>
+                        <line class="cls-13" x1="79" y1="70.83" x2="77.15" y2="68.98"/>
+                        <line class="cls-3" x1="38.8" y1="27.55" x2="38.8" y2="20.27"/>
+                        <polygon class="cls-9" points="26.87 77.67 29.74 77.67 29.66 47.07 29.66 47.07 26.87 77.67"/>
+                        <path class="cls-4" d="M45.85,44.67v-4l-5-5v-7l-2-1-2,1v7.05l-5,5v4h-2V77.91H47.86V44.67Z"/>
+                        <rect class="cls-5" x="31.75" y="40.64" width="14.1" height="4.03"/>
+                        <polyline class="cls-8"
+                                  points="33.77 77.59 33.77 51.69 36.79 51.69 36.79 48.7 40.81 48.7 40.81 51.69 43.84 51.69 43.84 77.59"/>
+                        <rect class="cls-5" x="37.79" y="54.74" width="2.01" height="23.16"/>
+                        <rect class="cls-5" x="36.79" y="30.57" width="4.03" height="2.01"/>
+                        <line class="cls-1" x1="9.58" y1="67.39" x2="9.58" y2="78.05"/>
+                        <line class="cls-1" x1="9.58" y1="72.17" x2="10.67" y2="71.08"/>
+                        <line class="cls-1" x1="9.58" y1="71.21" x2="7.78" y2="69.42"/>
+                        <polygon class="cls-12" points="9.49 57.53 4.99 73.73 13.99 73.73 9.49 57.53"/>
+                        <line class="cls-14" x1="9.58" y1="67.39" x2="9.58" y2="78.05"/>
+                        <line class="cls-14" x1="9.58" y1="72.17" x2="10.67" y2="71.08"/>
+                        <line class="cls-14" x1="9.58" y1="71.21" x2="7.78" y2="69.42"/>
+                        <line class="cls-15" x1="9.58" y1="67.5" x2="9.58" y2="78.16"/>
+                        <line class="cls-15" x1="9.58" y1="71.6" x2="10.67" y2="70.51"/>
+                        <line class="cls-15" x1="9.58" y1="71.32" x2="7.78" y2="69.53"/>
+                        <line class="cls-7" x1="95.19" y1="78.67" x2="1.78" y2="78.67"/>
+                    </g>
+                </svg>
+            </div>
+        </div>
+
+        <div class="frame" id="frame-3">
+            <div class="frame-item center-all frame-3-text">
+                <p class="first">Empower your team</p>
+                <p class="middle">with trusted business</p>
+                <p class="last">and finance news</p>
+            </div>
+            <div class="frame-item center-all frame-3-devices">
+                <svg id="devices" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.98 64.44">
+                    <style>
+                        .xcls-1 {
+                            fill: #296e99;
+                        }
+
+                        .xcls-2 {
+                            fill: #fff;
+                            opacity: 0.6;
+                        }
+
+                        .xcls-3, .xcls-5 {
+                            fill: none;
+                        }
+
+                        .xcls-3, .xcls-5, .xcls-7 {
+                            stroke: #143059;
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                        }
+
+                        .xcls-3, .xcls-7 {
+                            stroke-width: 0.82px;
+                        }
+
+                        .xcls-4, .xcls-7 {
+                            fill: #e58423;
+                        }
+
+                        .xcls-5 {
+                            stroke-width: 1.02px;
+                        }
+
+                        .xcls-6 {
+                            opacity: 0.2;
+                        }
+                    </style>
+                    <g id="phone">
+                        <rect class="xcls-1" x="0.41" y="0.41" width="46.39" height="63.62" rx="2.49"/>
+                        <rect class="xcls-2" x="6.47" y="5.89" width="34.26" height="49.59"/>
+                        <line class="xcls-1" x1="23.67" y1="59.75" x2="23.54" y2="59.75"/>
+                        <rect class="xcls-3" x="6.47" y="5.89" width="34.26" height="49.59"/>
+                        <rect class="xcls-3" x="0.41" y="0.41" width="46.39" height="63.62" rx="2.49"/>
+                        <rect class="xcls-4" x="11.48" y="25.85" width="2.94" height="4.42"/>
+                        <rect class="xcls-4" x="16.81" y="23.99" width="2.94" height="6.27"/>
+                        <rect class="xcls-4" x="22.13" y="21.49" width="2.94" height="8.78"/>
+                        <rect class="xcls-4" x="27.45" y="18.02" width="2.94" height="12.24"/>
+                        <rect class="xcls-4" x="32.77" y="15.58" width="2.94" height="14.68"/>
+                        <rect class="xcls-3" x="11.48" y="25.85" width="2.94" height="4.42"/>
+                        <rect class="xcls-3" x="16.81" y="23.99" width="2.94" height="6.27"/>
+                        <rect class="xcls-3" x="22.13" y="21.49" width="2.94" height="8.78"/>
+                        <rect class="xcls-3" x="27.45" y="18.02" width="2.94" height="12.24"/>
+                        <rect class="xcls-3" x="32.77" y="15.58" width="2.94" height="14.68"/>
+                        <line class="xcls-3" x1="13.01" y1="21.15" x2="32.95" y2="10.78"/>
+                        <polyline class="xcls-3" points="30.86 9.98 33.13 10.69 32.42 12.96"/>
+                        <line class="xcls-3" x1="10.96" y1="33.96" x2="36.24" y2="33.96"/>
+                        <line class="xcls-3" x1="10.96" y1="37.44" x2="36.24" y2="37.44"/>
+                        <line class="xcls-3" x1="10.96" y1="40.92" x2="36.24" y2="40.92"/>
+                        <line class="xcls-3" x1="10.96" y1="44.41" x2="36.24" y2="44.41"/>
+                        <line class="xcls-3" x1="10.96" y1="47.89" x2="36.24" y2="47.89"/>
+                        <line class="xcls-3" x1="10.96" y1="51.37" x2="36.24" y2="51.37"/>
+                        <line class="xcls-5" x1="23.45" y1="59.75" x2="23.44" y2="59.75"/>
+                    </g>
+                    <g id="tablet">
+                        <path class="xcls-6"
+                              d="M53.27,24.78a1,1,0,0,0-.59-.2H34.82a1.08,1.08,0,0,0-1.08,1.08V62.82a1,1,0,0,0,.41.82,1,1,0,0,0,.76.39H53a1,1,0,0,0,1-1V25.7A1,1,0,0,0,53.27,24.78Z"/>
+                        <rect class="xcls-1" x="35.37" y="24.58" width="20.02" height="39.32" rx="1.08"/>
+                        <line class="xcls-1" x1="45.39" y1="60.47" x2="45.38" y2="60.47"/>
+                        <rect class="xcls-2" x="38.21" y="27.39" width="14.71" height="29.98"/>
+                        <rect class="xcls-3" x="35.56" y="24.71" width="20.02" height="39.32" rx="0.99"/>
+                        <polygon class="xcls-3" points="38.21 27.52 38.21 57.33 52.92 57.33 52.92 27.39 38.21 27.52"/>
+                        <line class="xcls-5" x1="45.57" y1="60.6" x2="45.56" y2="60.6"/>
+                        <rect class="xcls-7" x="40.11" y="51.16" width="11.04" height="6.22"/>
+                        <rect class="xcls-1" x="40.09" y="30.11" width="11.06" height="4.32"/>
+                        <rect class="xcls-3" x="40.09" y="30.11" width="11.06" height="4.32"/>
+                        <line class="xcls-3" x1="40.09" y1="32.35" x2="43.82" y2="32.35"/>
+                        <line class="xcls-3" x1="40.09" y1="37.7" x2="51.13" y2="37.7"/>
+                        <line class="xcls-3" x1="40.09" y1="40.47" x2="51.13" y2="40.47"/>
+                        <line class="xcls-3" x1="40.09" y1="43.25" x2="51.13" y2="43.25"/>
+                        <line class="xcls-3" x1="40.09" y1="46.02" x2="51.13" y2="46.02"/>
+                        <line class="xcls-3" x1="40.09" y1="48.79" x2="51.13" y2="48.79"/>
+                        <line class="xcls-3" x1="46.1" y1="32.35" x2="47.46" y2="32.35"/>
+                    </g>
+                </svg>
+            </div>
+        </div>
+
+        <div class="frame" id="frame-4">
+            <div class="frame-item center-all frame-4-text">
+                <p class="first">Essential</p>
+                <p class="middle">for every</p>
+                <p class="last">business</p>
+            </div>
+            <div class="frame-item center-all frame-4-lockup">
+                <div class="frame-item center-all frame-4-logo">
+                    <img class="logo-container" id="logo-container-2" src="logo.svg" alt=""/>
+                </div>
+                <div class="frame-item center-all frame-4-cta">
+                    <a class="cta">Access today</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="banner.min.js"></script>
+<script>
+  document.querySelector('#banner')
+    .addEventListener('click', function () {
+      console.log('clicktag fired');
+      window.open(window.clickTag);
+    });
+</script>
+</body>
+</html>
